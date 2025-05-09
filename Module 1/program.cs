@@ -18,7 +18,7 @@ class Program
             Console.WriteLine("Please enter a number to select an option:");
             string choice = Console.ReadLine();
 
-            switch (choice)
+            /*switch (choice)
             {
                 case "1":
                     recipe.AddRecipe();
@@ -39,7 +39,7 @@ class Program
                 default:
                     Console.WriteLine("Invalid choice. Please try again.");
                     break;
-            }
+            }*/
         }
     }
 }
