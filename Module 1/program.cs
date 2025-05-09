@@ -10,11 +10,12 @@ class Program
         while (!quit)
         {
             Console.WriteLine("Welcome to your Recipe Book!");
-            Console.WriteLine("Please choose an option:");
             Console.WriteLine("1. Add Recipe");
-            Console.WriteLine("2. View Recipes");
-            Console.WriteLine("3. Quit");
-            Console.Write("Choose an option: ");
+            Console.WriteLine("2. Save Recipe");
+            Console.WriteLine("3. Load Recipe");
+            Console.WriteLine("4. View Recipes");
+            Console.WriteLine("5. Quit");
+            Console.WriteLine("Please enter a number to select an option:");
             string choice = Console.ReadLine();
 
             switch (choice)
@@ -23,10 +24,17 @@ class Program
                     recipe.AddRecipe();
                     break;
                 case "2":
-                    recipe.ViewRecipes();
+                    recipe.SaveToFile();
                     break;
                 case "3":
+                    recipe.LoadFromFile();
+                    break;
+                case "4":
+                    recipe.DisplayRecipe();
+                    break;
+                case "5":
                     quit = true;
+                    Console.WriteLine("Thank you for using the Recipe Book!");
                     break;
                 default:
                     Console.WriteLine("Invalid choice. Please try again.");
