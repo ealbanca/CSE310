@@ -1,0 +1,15 @@
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\bin\Debug\net8.0\Module 1.exe
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\bin\Debug\net8.0\Module 1.deps.json
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\bin\Debug\net8.0\Module 1.runtimeconfig.json
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\bin\Debug\net8.0\Module 1.dll
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\bin\Debug\net8.0\Module 1.pdb
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\obj\Debug\net8.0\Module 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\obj\Debug\net8.0\Module 1.AssemblyInfoInputs.cache
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\obj\Debug\net8.0\Module 1.AssemblyInfo.cs
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\obj\Debug\net8.0\Module 1.csproj.CoreCompileInputs.cache
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\obj\Debug\net8.0\Module 1.sourcelink.json
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\obj\Debug\net8.0\Module 1.dll
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\obj\Debug\net8.0\refint\Module 1.dll
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\obj\Debug\net8.0\Module 1.pdb
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\obj\Debug\net8.0\Module 1.genruntimeconfig.cache
+C:\Users\Hared\Documents\Hared\Studies\BYUI-Spring 2025\CSE 310 - Applied Programming\CSE310\Module 1\obj\Debug\net8.0\ref\Module 1.dll
