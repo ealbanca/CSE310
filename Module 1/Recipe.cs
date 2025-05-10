@@ -3,32 +3,32 @@ using System;
 
 class Recipe
 {
-    public string _date;
     public string _title;
-    public string _content;
+    public string _ingredients;
+    public string _instructions;
 
-    public Recipe(string date, string title, string content)
+
+    public Recipe(string title, string ingredients, string instructions)
     {
-        _date = date;
         _title = title;
-        _content = content;
-    }
-
-    public string GetDate()
-    {
-        return _date;
+        _ingredients = ingredients;
+        _instructions = instructions;
     }
 
     public string GetTitle()
     {
         return _title;
     }
-    public string GetContent()
+    public string GetIngredients()
     {
-        return _content;
+        return _ingredients;
+    }
+    public string GetInstructions()
+    {
+        return _instructions;
     }
     public override string ToString()
     {
-        return $"Date:{_date} - Name of the recipe:{_title}\n{_content}";
+        return $"Name of the recipe:{_title}\nIngredients: {_ingredients}\n Instructions:{_instructions}";
     }
 }
