@@ -1,5 +1,6 @@
 /*Edwin Hared Albancando Robles*/
 using System;
+using System.Text.Json;
 
 class RecipeBook
 {
@@ -25,13 +26,8 @@ class RecipeBook
     {
         Console.WriteLine("Enter the file name to save the recipe:");
         string fileName = Console.ReadLine();
-        using (StreamWriter writer = new StreamWriter(fileName))
-        {
-            foreach (Recipe recipe in recipes)
-            {
-                writer.WriteLine($"{recipe.GetTitle()},{recipe.GetIngredients().Replace(",", ",,")},{recipe.GetInstructions().Replace(",", ",,")}");
-            }
-        }
+        string json = JsonSerializer.Serialize(recipes, new JsonSerializerOptions { WriteIndented = true });
+        File.WriteAllText(fileName, json);
         Console.WriteLine("Recipes saved successfully!");
     }
 
@@ -41,27 +37,16 @@ class RecipeBook
         string fileName = Console.ReadLine();
         if (File.Exists(fileName))
         {
-            using (StreamReader reader = new StreamReader(fileName))
-            {
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                {
-                    string[] parts = line.Split(new string[] { "," }, StringSplitOptions.None);
-                    string title = parts[0];
-                    string ingredients = parts[1].Replace(",,", ",");
-                    string instructions = parts[2].Replace(",,", ",");
-                    recipes.Add(new Recipe(title, ingredients, instructions));
-                }
-            }
+            string json = File.ReadAllText(fileName);
+            recipes = JsonSerializer.Deserialize<List<Recipe>>(json) ?? new List<Recipe>();
             Console.WriteLine("Recipes loaded successfully!");
         }
         else
         {
             Console.WriteLine("File not found.");
         }
-
-
     }
+
 
     public void DisplayRecipes()
     {
