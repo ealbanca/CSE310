@@ -10,8 +10,8 @@ class Program
         while (!quit)
         {
             Console.WriteLine("Welcome to your Recipe Book!");
-            Console.WriteLine("1. Add Recipe");
-            Console.WriteLine("2. Save Recipe");
+            Console.WriteLine("1. Add a newRecipe");
+            Console.WriteLine("2. Save the Recipe");
             Console.WriteLine("3. Load Recipe");
             Console.WriteLine("4. View Recipes");
             Console.WriteLine("5. Quit");
