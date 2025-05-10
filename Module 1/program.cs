@@ -27,7 +27,7 @@ class Program
                     recipebook.Save();
                     break;
                 /*case "3":
-                    recipe.LoadFromFile();
+                    recipe.Load();
                     break;
                 case "4":
                     recipe.DisplayRecipe();

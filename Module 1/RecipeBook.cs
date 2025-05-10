@@ -35,4 +35,30 @@ class RecipeBook
         Console.WriteLine("Recipes saved successfully!");
     }
 
+    public void Load()
+    {
+        Console.WriteLine("Enter the existing file name to load the recipe book:");
+        string fileName = Console.ReadLine();
+        if (File.Exists(fileName))
+        {
+            using (StreamReader reader = new StreamReader(fileName))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    string[] parts = line.Split(new string[] { "," }, StringSplitOptions.None);
+                    string title = parts[0];
+                    string ingredients = parts[1].Replace(",,", ",");
+                    string instructions = parts[2].Replace(",,", ",");
+                    recipes.Add(new Recipe(title, ingredients, instructions));
+                }
+            }
+            Console.WriteLine("Recipes loaded successfully!");
+        }
+        else
+        {
+            Console.WriteLine("File not found.");
+        }
+    }
+
 }
