@@ -29,6 +29,6 @@ class Recipe
     }
     public override string ToString()
     {
-        return $"Name of the recipe:{_title}\nIngredients: {_ingredients}\n Instructions:{_instructions}";
+        return $"Name of teh dish:{_title}\nIngredients: {_ingredients}\n Instructions:{_instructions}";
     }
 }
