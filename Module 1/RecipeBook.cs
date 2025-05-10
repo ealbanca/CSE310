@@ -21,4 +21,18 @@ class RecipeBook
         Console.WriteLine("Recipe added successfully!");
     }
 
+    public void Save()
+    {
+        Console.WriteLine("Enter the file name to save the recipe:");
+        string fileName = Console.ReadLine();
+        using (StreamWriter writer = new StreamWriter(fileName))
+        {
+            foreach (Recipe recipe in recipes)
+            {
+                writer.WriteLine($"{recipe.GetTitle()},{recipe.GetIngredients().Replace(",", ",,")},{recipe.GetInstructions().Replace(",", ",,")}");
+            }
+        }
+        Console.WriteLine("Recipes saved successfully!");
+    }
+
 }

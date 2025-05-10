@@ -23,10 +23,10 @@ class Program
                 case "1":
                     recipebook.AddRecipe();
                     break;
-                /*case "2":
-                    recipe.SaveToFile();
+                case "2":
+                    recipebook.Save();
                     break;
-                case "3":
+                /*case "3":
                     recipe.LoadFromFile();
                     break;
                 case "4":
