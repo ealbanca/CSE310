@@ -26,11 +26,11 @@ class Program
                 case "2":
                     recipebook.Save();
                     break;
-                /*case "3":
-                    recipe.Load();
+                case "3":
+                    recipebook.Load();
                     break;
-                case "4":
-                    recipe.DisplayRecipe();
+                /*case "4":
+                    recipe.DisplayRecipes();
                     break;*/
                 case "5":
                     quit = true;
