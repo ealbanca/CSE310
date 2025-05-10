@@ -29,9 +29,9 @@ class Program
                 case "3":
                     recipebook.Load();
                     break;
-                /*case "4":
-                    recipe.DisplayRecipes();
-                    break;*/
+                case "4":
+                    recipebook.DisplayRecipes();
+                    break;
                 case "5":
                     quit = true;
                     Console.WriteLine("Thank you for using the Recipe Book!");

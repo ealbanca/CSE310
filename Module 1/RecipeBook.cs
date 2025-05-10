@@ -63,6 +63,14 @@ class RecipeBook
 
     }
 
+    public void DisplayRecipes()
+    {
+        Console.WriteLine("Recipes:");
+        foreach (Recipe recipe in recipes)
+        {
+            Console.WriteLine(recipe.ToString());
+        }
+    }
 
 
 }
