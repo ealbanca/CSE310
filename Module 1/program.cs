@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Recipe recipe = new Recipe();
+        RecipeBook recipebook = new RecipeBook();
         bool quit = false;
         while (!quit)
         {
