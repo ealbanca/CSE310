@@ -35,7 +35,7 @@ class RecipeBook
         {
             foreach (Recipe recipe in recipes)
             {
-                writer.WriteLine($"{recipe.GetTitle()},{recipe.GetServings()}, {recipe.GetPrepTime()}. {recipe.GetCookTime()}, {recipe.GetIngredients().Replace(",", ",,")},{recipe.GetInstructions().Replace(",", ",,")}");
+                writer.WriteLine($"{recipe.GetTitle()},{recipe.GetServings()}, {recipe.GetPrepTime()}, {recipe.GetCookTime()}, {recipe.GetIngredients().Replace(",", ",,")},{recipe.GetInstructions().Replace(",", ",,")}");
             }
         }
         Console.WriteLine("Recipes saved successfully!");
@@ -54,11 +54,12 @@ class RecipeBook
                 {
                     string[] parts = line.Split(new string[] { "," }, StringSplitOptions.None);
                     string title = parts[0];
-                    int servings = int.Parse(parts[1]);
-                    int prepTime = int.Parse(parts[2]);
-                    int cookTime = int.Parse(parts[3]); string ingredients = parts[1].Replace(",,", ",");
-                    string instructions = parts[2].Replace(",,", ",");
-                    recipes.Add(new Recipe(title, servings, prepTime, cookTime, ingredients, instructions));
+                    string servings = parts[1];
+                    string prepTime = parts[2];
+                    string cookTime = parts[3];
+                    string ingredients = parts[4].Replace(",,", ",");
+                    string instructions = parts[5].Replace(",,", ",");
+                    recipes.Add(new Recipe(title, int.Parse(servings), int.Parse(prepTime), int.Parse(cookTime), ingredients, instructions));
                 }
             }
             Console.WriteLine("Recipes loaded successfully!");
