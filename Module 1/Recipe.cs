@@ -26,6 +26,19 @@ class Recipe
     {
         return _title;
     }
+
+    public int GetServings()
+    {
+        return _servings;
+    }
+    public int GetPrepTime()
+    {
+        return _prepTime;
+    }
+    public int GetCookTime()
+    {
+        return _cookTime;
+    }
     public string GetIngredients()
     {
         return _ingredients;
@@ -36,6 +49,6 @@ class Recipe
     }
     public override string ToString()
     {
-        return $"Name of teh dish:{_title}\nIngredients: {_ingredients}\n Instructions:{_instructions}";
+        return $"Name of the dish:{_title}\nServings: {_servings}\nPreparation Time: {_prepTime}\nCooking Time: {_cookTime}\nIngredients: {_ingredients}\nInstructions:{_instructions}";
     }
 }
