@@ -13,11 +13,17 @@ class RecipeBook
     {
         Console.WriteLine("Enter the title of the recipe:");
         string title = Console.ReadLine();
+        Console.WriteLine("Enter the number of servings:");
+        int servings = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter the preparation time (in minutes):");
+        int prepTime = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter the cooking time (in minutes):");
+        int cookTime = int.Parse(Console.ReadLine());
         Console.WriteLine("Enter the ingredients:");
         string ingredients = Console.ReadLine();
         Console.WriteLine("Enter the instructions:");
         string instructions = Console.ReadLine();
-        recipes.Add(new Recipe(title, ingredients, instructions));
+        recipes.Add(new Recipe(title, servings, prepTime, cookTime, ingredients, instructions));
         Console.WriteLine("Recipe added successfully!");
     }
 
@@ -50,7 +56,10 @@ class RecipeBook
                     string title = parts[0];
                     string ingredients = parts[1].Replace(",,", ",");
                     string instructions = parts[2].Replace(",,", ",");
-                    recipes.Add(new Recipe(title, ingredients, instructions));
+                    int servings = 0;
+                    int prepTime = 0;
+                    int cookTime = 0;
+                    recipes.Add(new Recipe(title, servings, prepTime, cookTime, ingredients, instructions));
                 }
             }
             Console.WriteLine("Recipes loaded successfully!");
