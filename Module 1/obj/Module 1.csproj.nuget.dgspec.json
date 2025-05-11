@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hared\\Documents\\Hared\\Studies\\BYUI-Spring 2025\\CSE 310 - Applied Programming\\CSE310\\Module 1\\Module 1.csproj": {}
+    "C:\\Users\\Hared\\Documents\\Hared\\Studies\\BYUI-Spring 2025\\CSE 310 - Applied Programming\\Recipe-Book\\Module 1\\Module 1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hared\\Documents\\Hared\\Studies\\BYUI-Spring 2025\\CSE 310 - Applied Programming\\CSE310\\Module 1\\Module 1.csproj": {
+    "C:\\Users\\Hared\\Documents\\Hared\\Studies\\BYUI-Spring 2025\\CSE 310 - Applied Programming\\Recipe-Book\\Module 1\\Module 1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hared\\Documents\\Hared\\Studies\\BYUI-Spring 2025\\CSE 310 - Applied Programming\\CSE310\\Module 1\\Module 1.csproj",
+        "projectUniqueName": "C:\\Users\\Hared\\Documents\\Hared\\Studies\\BYUI-Spring 2025\\CSE 310 - Applied Programming\\Recipe-Book\\Module 1\\Module 1.csproj",
         "projectName": "Module 1",
-        "projectPath": "C:\\Users\\Hared\\Documents\\Hared\\Studies\\BYUI-Spring 2025\\CSE 310 - Applied Programming\\CSE310\\Module 1\\Module 1.csproj",
+        "projectPath": "C:\\Users\\Hared\\Documents\\Hared\\Studies\\BYUI-Spring 2025\\CSE 310 - Applied Programming\\Recipe-Book\\Module 1\\Module 1.csproj",
         "packagesPath": "C:\\Users\\Hared\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hared\\Documents\\Hared\\Studies\\BYUI-Spring 2025\\CSE 310 - Applied Programming\\CSE310\\Module 1\\obj\\",
+        "outputPath": "C:\\Users\\Hared\\Documents\\Hared\\Studies\\BYUI-Spring 2025\\CSE 310 - Applied Programming\\Recipe-Book\\Module 1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hared\\AppData\\Roaming\\NuGet\\NuGet.Config"
