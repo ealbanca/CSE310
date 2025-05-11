@@ -1,16 +1,23 @@
 /*Edwin Hared Albancando Robles*/
 using System;
+using Microsoft.VisualBasic;
 
 class Recipe
 {
     public string _title;
+    public int _servings;
+    public int _prepTime;
+    public int _cookTime;
     public string _ingredients;
     public string _instructions;
 
 
-    public Recipe(string title, string ingredients, string instructions)
+    public Recipe(string title, int servings, int prepTime, int cookTime, string ingredients, string instructions)
     {
         _title = title;
+        _servings = servings;
+        _prepTime = prepTime;
+        _cookTime = cookTime;
         _ingredients = ingredients;
         _instructions = instructions;
     }
