@@ -1,6 +1,7 @@
 ﻿/*Edwin Hared Albancando Robles */
 using System;
 
+//This is the main class that that will run the program
 class Program
 {
     static void Main(string[] args)
@@ -9,8 +10,9 @@ class Program
         bool quit = false;
         while (!quit)
         {
+            //this is the main menu of the program that will show the user the options
             Console.WriteLine("Welcome to your Recipe Book!");
-            Console.WriteLine("1. Add a newRecipe");
+            Console.WriteLine("1. Add a new Recipe");
             Console.WriteLine("2. Save the Recipe");
             Console.WriteLine("3. Load Recipe");
             Console.WriteLine("4. View Recipes");
@@ -18,6 +20,7 @@ class Program
             Console.WriteLine("Please enter a number to select an option:");
             string choice = Console.ReadLine();
 
+            //this is the switch statement that will run the program depending on the user input
             switch (choice)
             {
                 case "1":

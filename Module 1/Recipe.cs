@@ -1,7 +1,7 @@
 /*Edwin Hared Albancando Robles*/
 using System;
 using Microsoft.VisualBasic;
-
+// The class recipe will hold the information of the recipe
 class Recipe
 {
     public string _title;
@@ -21,7 +21,7 @@ class Recipe
         _ingredients = ingredients;
         _instructions = instructions;
     }
-
+    //all these methods are getters that will return the information of the recipe
     public string GetTitle()
     {
         return _title;

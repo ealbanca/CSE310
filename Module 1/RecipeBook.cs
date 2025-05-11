@@ -1,6 +1,7 @@
 /*Edwin Hared Albancando Robles*/
 using System;
-
+using System.IO;
+// This class is the recipebook, the one that will "hold" the recipes
 class RecipeBook
 {
     public List<Recipe> recipes;
@@ -8,7 +9,7 @@ class RecipeBook
     {
         recipes = new List<Recipe>();
     }
-
+    // This method will add a recipe to the recipebook, will read the user input and will create a new recipe
     public void AddRecipe()
     {
         Console.WriteLine("Enter the title of the recipe:");
@@ -26,7 +27,7 @@ class RecipeBook
         recipes.Add(new Recipe(title, servings, prepTime, cookTime, ingredients, instructions));
         Console.WriteLine("Recipe added successfully!");
     }
-
+    // This method will save the recipes to a file using a StreamWriter
     public void Save()
     {
         Console.WriteLine("Enter the file name to save the recipe:");
@@ -40,7 +41,7 @@ class RecipeBook
         }
         Console.WriteLine("Recipes saved successfully!");
     }
-
+    // This method will load the recipes from a file using a StreamReader
     public void Load()
     {
         Console.WriteLine("Enter the existing file name to load the recipe:");
@@ -71,7 +72,7 @@ class RecipeBook
 
 
     }
-
+    // This method will display the recipes from the previous loaded file
     public void DisplayRecipes()
     {
         Console.WriteLine("Recipes:");
