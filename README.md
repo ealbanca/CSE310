@@ -4,7 +4,7 @@ This Recipe Book program, developed in C#, allows users to create, save, load, a
 
 Here is a short video explaining how the Recipe Book program works, uploaded on YouTube 
 
-[Software Demo Video](https://youtu.be/oM3rmZ-Em5s)
+[Software Demo Video]([https://youtu.be/oM3rmZ-Em5s](https://youtu.be/G1YM_EWv4yg))
 
 # Development Environment
 
